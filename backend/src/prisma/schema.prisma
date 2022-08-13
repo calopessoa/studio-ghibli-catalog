@@ -1,0 +1,49 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Movie {
+  id                String              @id
+  title             String              @db.VarChar(255)
+  banner            String
+  description       String              @db.LongText
+  director          Director            @relation(fields: [directorId], references: [id])
+  directorId        String
+  MoviesOnProducers MoviesOnProducers[]
+
+  @@map("movies")
+}
+
+model Director {
+  id     String  @id
+  name   String
+  movies Movie[]
+
+  @@map("directors")
+}
+
+model Producer {
+  id                String              @id
+  name              String
+  MoviesOnProducers MoviesOnProducers[]
+
+  @@map("producers")
+}
+
+model MoviesOnProducers {
+  movie      Movie    @relation(fields: [movieId], references: [id])
+  movieId    String
+  producer   Producer @relation(fields: [producerId], references: [id])
+  producerId String
+
+  @@id([movieId, producerId])
+  @@map("moviesOnProducers")
+}
