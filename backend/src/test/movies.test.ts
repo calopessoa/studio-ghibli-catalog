@@ -16,9 +16,15 @@ describe("Integration test for getAll movies route", () => {
     expect(response.body).toStrictEqual(allMockedMovies);
     expect(response.status).toBe(200);
   });
+  it("should throw an error", async () => {
+    const response = await request(app).get("/films");
+    expect(response.body).toStrictEqual({});
+    expect(response.status).toBe(404);
+  });
 });
 
 // TO DO:
-// error handler middleware;
-// error case in test;
+// error handler middleware; OK
+// error case in test; OK
+
 // DOCS ( NOT SWAGGERRRRRRRRRRR RR   DINOSAURRRRR);
