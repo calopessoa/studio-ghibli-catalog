@@ -20,7 +20,6 @@ export const useFetch = (path: string) => {
     };
     getAll();
   }, [url]);
-  console.log(films);
 
   return films;
 };

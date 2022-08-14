@@ -1,84 +1,63 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useFetch } from "../hooks/useFetch";
-import ReactPaginate from 'react-paginate';
-import { ContainerProps } from "../interfaces/ContainerProps";
 
-const Items = ({ currentItems }) => {
-  return (
-    <>
-      {currentItems && currentItems.map((film: any) => (
-        <p>{film.title}</p>
-      ))}
-    </>
-  )
-}
+export const Container = () => {
+  const [path, setPath] = useState('first');
 
-export const Container= ({ itemsPerPage }: ContainerProps) => {
-  // const [page, setPage] = useState(1);
-  const movies = useFetch('movies');
-  const [currentItems, setCurrentItems] = useState(null);
-  const [pageCount, setPageCount] = useState(0);
-  const [itemOffset, setItemOffset] = useState(0);
- 
+  const allMovies = useFetch(`movies/${path}`);
 
-
-  useEffect(() => {
-    const endOffSet = itemOffset + itemsPerPage;
-    console.log(`Loading items from ${itemOffset} to ${endOffSet}`);
-    setCurrentItems(movies.slice(itemOffset, endOffSet));
-    setPageCount(Math.ceil(movies.length / itemsPerPage));
-  }, [itemOffset, itemsPerPage, movies]);
-
-  const handlePageClick = (event: any) => {
-    const newOfSet = event.selected * itemsPerPage % movies.length;
-    setItemOffset(newOfSet);
+  const renderByPage = (index: string) => {
+    setPath(index);
   }
 
   return (
-    <>
-      <Items
-        currentItems={currentItems}
-      />
-      <ReactPaginate
-        breakLabel="..."
-        nextLabel="next >"
-        onPageChange={handlePageClick}
-        pageRangeDisplayed={1}
-        pageCount={pageCount}
-        previousLabel="< previous"
-        renderOnZeroPageCount={null}
-      />
-    </>
-  )
+    <main className="page">
 
-  // const elementsPerPage = 10;
-  // const totalElements = movies.length;
-  // const numberOfPages = Math.ceil(totalElements / elementsPerPage);
+      <div className="bt-space">
+        <nav>Show by lists of 10</nav>
+        <button
+          className="bt-pagination"
+          onClick={() => renderByPage('first')}
+        >
+          page 1
+        </button>
 
-  // return (
-  //   <main className="page">
-  //     <>
-  //       <button>Next page</button>
-  //       <button>Previous page</button>
-  //     </>
+        <button
+          className="bt-pagination"
+          onClick={() => renderByPage('second')}
+        >
+          page 2
+        </button>
 
-  //     {/* {
-  //       (movies.map((film: any, index) => {
-  //         while (index < 10)
-  //        { return (
-  //           <section className="container">
-  //            <img
-  //             className="banner"
-  //             src={ film.banner }
-  //             alt={ film.banner }
-  //           />
-  //             <p key={film.id} className="title-card">{film.title}</p>
-  //           </section>
-  //         )
-  //         }
-  //         return '';
-  //       }))
-  //     } */}
-  //   </main>
-  // );
+        <button
+          className="bt-pagination"
+          onClick={() => renderByPage('third')}
+        >
+          page 3
+        </button>
+
+        <button
+          className="bt-pagination"
+          onClick={() => renderByPage('')}
+        >
+          show all
+        </button>
+      </div>
+
+      {
+        (allMovies.map((film: any, index) => {
+         return (
+           <section key={film.id} className="container">
+             <img
+              className="banner"
+              src={ film.banner }
+              alt={ film.banner }
+            />
+              <p className="title-card">{film.title}</p>
+            </section>
+          )
+        }))
+      }
+    </main>
+  );
 }
