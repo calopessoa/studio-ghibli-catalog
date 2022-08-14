@@ -1,3 +1,4 @@
+import { Container } from './components/Container';
 import { Header } from './components/Header';
 import { Page, usePage } from './contexts/Page';
 
@@ -7,9 +8,9 @@ function App() {
   const renderSwitch = () => {
     switch (page) {
       case Page.Titles:
-        return <div>Your films listed by titles</div>;
+        return <div className='sub-title'>Your films listed by titles</div>;
       case Page.Directors:
-        return <div>Your films listed by directors</div>;
+        return <div className='sub-title'>Your films listed by directors</div>;
       default:
         return '';
     }
@@ -18,6 +19,7 @@ function App() {
     <div className="App">
      <Header />
       {renderSwitch()}
+      <Container itemsPerPage={10} />
     </div>
   );
 }
