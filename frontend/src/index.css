@@ -81,6 +81,7 @@ h2 {
   flex-grow: 1;
   display: flex;
   flex-flow: column;
+  /* align-items: center; */
 }
 
 .status {
@@ -229,6 +230,38 @@ button.bt-remove {
   margin-right: 0;
 }
 
+.sub-title {
+  margin-bottom: 30px;
+}
+
+.container {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  margin-bottom: 20px;
+  width: 320px;
+  height: 110px;
+  border: 1px solid white;
+  border-radius: 8px;
+  box-shadow: 5px 0px 10px 1px rgba(250,250,250,0.25);
+
+}
+
+.banner {
+  margin-left: 5px;
+  border-radius: 100%;
+  height: 16vh;
+  max-height: 100px;
+  width: 16vw;
+  max-width: 100px;
+}
+
+.title-card {
+  flex-direction: flex;
+  align-self: center;
+  margin-right: 5px;
+}
+
 @media screen and (max-width: 800px) {
   body {
     font-size: 14px;
@@ -290,4 +323,5 @@ button.bt-remove {
     padding: 5px 10px;
     margin: 0 10px 10px 0;
   }
+
 }
