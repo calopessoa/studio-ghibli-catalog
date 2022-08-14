@@ -1,4 +1,3 @@
-import { prisma } from "../prisma";
 import { app } from "../app";
 import request from "supertest";
 import { allMockedMovies } from "../mocks";
@@ -22,9 +21,3 @@ describe("Integration test for getAll movies route", () => {
     expect(response.status).toBe(404);
   });
 });
-
-// TO DO:
-// error handler middleware; OK
-// error case in test; OK
-
-// DOCS ( NOT SWAGGERRRRRRRRRRR RR   DINOSAURRRRR);
