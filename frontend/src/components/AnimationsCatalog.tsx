@@ -11,7 +11,7 @@ export const AnimationsCatalog = () => {
   }
 
   const formatDescription = (text) => {
-    const arrText = text.split('').slice(0, 60);
+    const arrText = text.split('').slice(0, 110);
     const newText = arrText.join('') + '...';
     return newText;
   }
@@ -54,9 +54,9 @@ export const AnimationsCatalog = () => {
         (allMovies.map((film: any, index) => {
          return (
            <section key={film.id} className="card">
-             <span>
-               <p>Director{film.director}</p>
-               <p>Producer{film.producer}</p>
+             <span className="bigshots">
+               <p className="directors-producers">Director <strong>{film.director}</strong> </p>
+               <p className="directors-producers">Producer <strong>{film.producers} </strong></p>
              </span>
 
              <img

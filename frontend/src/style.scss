@@ -73,6 +73,26 @@ $ghibliBlack: #221815;
         height: 300px;
         width: 18%;
 
+        .title-card {
+          margin-top: -16px;
+        }
+
+        .bigshots {
+          @include fastDisplay(space-evenly, row, nowrap);
+          width: 100%;
+          margin-bottom: -16px;
+        }
+
+        .directors-producers {
+          font-size: 8px;
+          font-style: italic;
+        }
+
+        .card-description {
+          margin-top: -20px;
+          font-size: 12px;
+        }
+
 
         img {
           width: 100%;
