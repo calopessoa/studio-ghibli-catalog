@@ -1,25 +1,13 @@
-import { Container } from './components/Container';
+import { AnimationsCatalog } from './components/AnimationsCatalog';
+import { Footer } from './components/Footer';
 import { Header } from './components/Header';
-// import { Page, usePage } from './contexts/Page';
 
 function App() {
-  // const { page } = usePage();
-
-  // const renderSwitch = () => {
-  //   switch (page) {
-  //     case Page.All:
-  //       return <div className='sub-title'>All Studio Ghibli films made so far</div>;
-  //     case Page.Directors:
-  //       return <div className='sub-title'>Your films listed by directors</div>;
-  //     default:
-  //       return '';
-  //   }
-  // }
   return (
-    <div className="App">
+    <div className="main-container">
      <Header />
-      {/* {renderSwitch()} */}
-      <Container />
+      <AnimationsCatalog />
+      <Footer />
     </div>
   );
 }
@@ -27,6 +15,7 @@ function App() {
 export default App;
 
 // TO DO
+// *** = in progress
 // ***** = completed
 
 // ***** paginacao 10 em 10 NO BACKEND
@@ -34,7 +23,7 @@ export default App;
 
 // documentaçao
 
-// estilização (expansao de cards menores em maiores com detalhes)
+// *** estilização (expansao de cards menores em maiores com detalhes)
 
 // ----------------------------------------------------------------------------
 

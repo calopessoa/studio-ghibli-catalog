@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+}
+
+$ghibliBlue: #109CEB;
+$ghibliBlack: #221815;
+
+@mixin fastDisplay($x, $y, $z) {
+  display: flex;
+  align-items: center;
+  justify-content: $x;
+  flex-flow: $y $z;
+}
+
+.main-container {
+  @include fastDisplay(space-evenly, column, nowrap);
+  min-height: 150vh;
+  width: 98.5vw;
+
+
+  header {
+    @include fastDisplay(space-evenly, row, nowrap);
+    height: 380px;
+    width: 100.5%;
+    background-image: url('./assets/totoro.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 62%;
+    background-color: $ghibliBlue;
+
+    h1 {
+      font-size: 56px;
+      color: white;
+    }
+  }
+
+  main {
+    @include fastDisplay(space-evenly, column, nowrap);
+    width: 100.5%;
+
+    nav {
+      @include fastDisplay(center, row, nowrap);
+      height: 80px;
+      width: 100%;
+      background-color: $ghibliBlack;
+      color: white;
+
+      .bt-pagination {
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 8px;
+        border: 1px solid black;
+        cursor: pointer;
+        transition: 0.5s;
+        margin: auto 16px;
+
+        &:hover {
+          background-color: $ghibliBlue;
+        }
+      }
+    }
+
+    .deck-box {
+      @include fastDisplay(space-evenly, row, wrap);
+      height: 500px;
+      width: 99%;
+
+      .card {
+        @include fastDisplay(space-evenly, column, nowrap);
+        height: 300px;
+        width: 18%;
+
+
+        img {
+          width: 100%;
+          border-radius: 6px;
+        }
+      }
+    }
+  }
+}
