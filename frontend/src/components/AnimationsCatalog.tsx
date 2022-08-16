@@ -10,12 +10,6 @@ export const AnimationsCatalog = () => {
     setPath(index);
   }
 
-  const formatDescription = (text) => {
-    const arrText = text.split('').slice(0, 110);
-    const newText = arrText.join('') + '...';
-    return newText;
-  }
-
   return (
     <main>
       <nav className="bt-space">
@@ -42,6 +36,7 @@ export const AnimationsCatalog = () => {
         </button>
 
         <button
+          data-testid="show-all-btn"
           className="bt-pagination"
           onClick={() => renderByPage('')}
         >
@@ -54,19 +49,20 @@ export const AnimationsCatalog = () => {
         (allMovies.map((film: any, index) => {
          return (
            <section key={film.id} className="card">
-             <span className="bigshots">
-               <p className="directors-producers">Director <strong>{film.director}</strong> </p>
-               <p className="directors-producers">Producer <strong>{film.producers} </strong></p>
-             </span>
 
              <img
               className="banner"
               src={ film.banner }
               alt={ film.banner }
-            />
-             <h4 className="title-card">{film.title}</h4>
-
-             <article className="card-description">{formatDescription(film.description)}</article>
+             />
+             <div className="intro">
+               <h4 className="title-card">{film.title}</h4>
+               <article className="card-description">{film.description}</article>
+               <span className="bigshots">
+               <article className="directors-producers">Director: <strong>{film.director}</strong> </article>
+               <article className="directors-producers">Producer(s): <strong>{film.producers} </strong></article>
+             </span>
+             </div>
             </section>
           )
         }))

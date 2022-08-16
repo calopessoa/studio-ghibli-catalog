@@ -226,3 +226,112 @@ export const allMockedMovies = [
     producers: ["Hayao Miyazaki"],
   },
 ];
+
+export const paginateMovies = [
+  {
+    id: "11e51e86-5b40-4662-9302-3fe40ac3d2df",
+    title: "Only Yesterday",
+    banner:
+      "https://image.tmdb.org/t/p/w533_and_h300_bestv2/isCrlWWI4JrdLKAUAwFb5cjAsH4.jpg",
+    description:
+      "It’s 1982, and Taeko is 27 years old, unmarried, and has lived her whole life in Tokyo. She decides to visit her family in the countryside, and as the train travels through the night, memories flood back of her younger years: the first immature stirrings of romance, the onset of puberty, and the frustrations of math and boys. At the station she is met by young farmer Toshio, and the encounters with him begin to reconnect her to forgotten longings. In lyrical switches between the present and the past, Taeko contemplates the arc of her life, and wonders if she has been true to the dreams of her childhood self.",
+    director: "Isao Takahata",
+    producers: ["Toshio Suzuki"],
+  },
+  {
+    id: "1ca0c143-9d8b-47f3-b977-3bace35390b5",
+    title: "The Red Turtle",
+    banner:
+      "https://image.tmdb.org/t/p/original/kjXdW5H3myRBmTMYgKayjphr2FA.jpg",
+    description:
+      "A man set adrift by a storm wakes up on a beach. He discovers that he is on a deserted island with plenty of fresh water, fruit and a dense bamboo forest. He builds a raft from bamboo and attempts to sail away, but his raft is destroyed by an unseen monster in the sea, forcing him back to the island. He tries again with another, larger raft, but is again foiled by the creature. A third attempt again ends with the raft destroyed, but this time he is confronted by a giant red turtle, which stares at him, and forces him back to the island.",
+    director: "Michaël Dudok de Wit",
+    producers: [
+      "Grégoire Sorlat",
+      "Toshio Suzuki",
+      "Isao Takahata",
+      "Vincent Maraval",
+      "Pascal Caucheteux",
+    ],
+  },
+  {
+    id: "1d71a2ac-ca39-4bcc-9d70-e3f4fc109c25",
+    title: "My Neighbors the Yamadas",
+    banner:
+      "https://image.tmdb.org/t/p/original/nDOsicEg4RHDq0t23JKGSb58z6u.jpg",
+    description:
+      "The Yamadas are a typical middle class Japanese family in urban Tokyo and this film shows us a variety of episodes of their lives. With tales that range from the humourous to the heartbreaking, we see this family cope with life's little conflicts, problems and joys in their own way.",
+    director: "Isao Takahata",
+    producers: ["Toshio Suzuki"],
+  },
+  {
+    id: "2bd5ba59-f268-4725-b4a4-48106ca137d4",
+    title: "The Cat Returns",
+    banner:
+      "https://image.tmdb.org/t/p/original/d4BTZvckFTthyhGX27LZnWxl0tl.jpg",
+    description:
+      "Haru, a schoolgirl bored by her ordinary routine, saves the life of an unusual cat and suddenly her world is transformed beyond anything she ever imagined. The Cat King rewards her good deed with a flurry of presents, including a very shocking proposal of marriage to his son! Haru embarks on an unexpected journey to the Kingdom of Cats where her eyes are opened to a whole other world.",
+    director: "Hiroyuki Morita",
+    producers: ["Toshio Suzuki"],
+  },
+  {
+    id: "2c872196-9eb1-4b7e-a2d4-aa099471797a",
+    title: "The Tale of the Princess Kaguya",
+    banner:
+      "https://image.tmdb.org/t/p/original/lMaWlYThCSnsmW3usxWTpSuyZp1.jpg",
+    description:
+      "A bamboo cutter named Sanuki no Miyatsuko discovers a miniature girl inside a glowing bamboo shoot. Believing her to be a divine presence, he and his wife decide to raise her as their own, calling her 'Princess'.",
+    director: "Isao Takahata",
+    producers: ["Yoshiaki Nishimura"],
+  },
+  {
+    id: "2ea2fe98-8e19-4418-a7fa-a382087014f8",
+    title: "Pom Poko",
+    banner:
+      "https://image.tmdb.org/t/p/original/jScPd0u0jeo66l8gwDl7W9hDUnM.jpg",
+    description:
+      "As the human city development encroaches on the raccoon population's forest and meadow habitat, the raccoons find themselves faced with the very real possibility of extinction. In response, the raccoons engage in a desperate struggle to stop the construction and preserve their home.",
+    director: "Isao Takahata",
+    producers: ["Toshio Suzuki"],
+  },
+  {
+    id: "32b04150-882c-43bb-acb8-c45d486482a2",
+    title: "The Wind Rises",
+    banner:
+      "https://image.tmdb.org/t/p/original/stM3jlD4nSJhlvR2DE7XnB0eN25.jpg",
+    description:
+      "A lifelong love of flight inspires Japanese aviation engineer Jiro Horikoshi, whose storied career includes the creation of the A-6M World War II fighter plane.",
+    director: "Hayao Miyazaki",
+    producers: ["Toshio Suzuki"],
+  },
+  {
+    id: "34c5f0f7-7aa7-42b8-8055-71f4bb582dc1",
+    title: "From Up on Poppy Hill",
+    banner:
+      "https://image.tmdb.org/t/p/original/xtPBZYaWQMQxRpy7mkdk5n1bTxs.jpg",
+    description:
+      "The story is set in 1963 in Yokohama. Kokuriko Manor sits on a hill overlooking the harbour. A 16 year-old girl, Umi, lives in that house. Every morning she raises a signal flag facing the sea. The flag means “I pray for safe voyages”. A 17 year-old boy, Shun, always sees this flag from the sea as he rides a tugboat to school. Gradually the pair are drawn to each other but they are faced with a sudden trial. Even so, they keep going without running from facing the hardships of reality.",
+    director: "Gorō Miyazaki",
+    producers: ["Toshio Suzuki"],
+  },
+  {
+    id: "36e2e5f4-41e6-41b1-814e-2a936db891e3",
+    title: "Arrietty",
+    banner:
+      "https://image.tmdb.org/t/p/original/7Z7WVzJsSReG8B0CaPk0bvWD7tK.jpg",
+    description:
+      "14-year-old Arrietty and the rest of the Clock family live in peaceful anonymity as they make their own home from items 'borrowed' from the house's human inhabitants. However, life changes for the Clocks when a human boy discovers Arrietty.",
+    director: "Hiromasa Yonebayashi",
+    producers: ["Toshio Suzuki"],
+  },
+  {
+    id: "5a1b2b68-52d4-40e1-b110-06b6f4aa183b",
+    title: "Ponyo",
+    banner:
+      "https://image.tmdb.org/t/p/original/6a1qZ1qat26mAIK3Lq8iYdGpyHm.jpg",
+    description:
+      "The son of a sailor, 5-year old Sosuke lives a quiet life on an oceanside cliff with his mother Lisa. One fateful day, he finds a beautiful goldfish trapped in a bottle on the beach and upon rescuing her, names her Ponyo. But she is no ordinary goldfish. The daughter of a masterful wizard and a sea goddess, Ponyo uses her father's magic to transform herself into a young girl and quickly falls in love with Sosuke, but the use of such powerful sorcery causes a dangerous imbalance in the world. As the moon steadily draws nearer to the earth and Ponyo's father sends the ocean's mighty waves to find his daughter, the two children embark on an adventure of a lifetime to save the world and fulfill Ponyo's dreams of becoming human.",
+    director: "Hayao Miyazaki",
+    producers: ["Toshio Suzuki"],
+  },
+];

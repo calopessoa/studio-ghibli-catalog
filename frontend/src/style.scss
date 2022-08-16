@@ -5,6 +5,11 @@
   font-family: 'Roboto Slab', serif;
 }
 
+body {
+  background: whitesmoke;
+  height: 100vh;
+}
+
 $ghibliBlue: #109CEB;
 $ghibliBlack: #221815;
 
@@ -18,13 +23,13 @@ $ghibliBlack: #221815;
 .main-container {
   @include fastDisplay(space-evenly, column, nowrap);
   min-height: 150vh;
-  width: 98.5vw;
+  width: 98.1vw;
 
 
   header {
     @include fastDisplay(space-evenly, row, nowrap);
-    height: 380px;
-    width: 100.5%;
+    height: 320px;
+    width: 100.6%;
     background-image: url('./assets/totoro.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -41,10 +46,11 @@ $ghibliBlack: #221815;
     @include fastDisplay(space-evenly, column, nowrap);
     width: 100.5%;
 
+
     nav {
       @include fastDisplay(center, row, nowrap);
       height: 80px;
-      width: 100%;
+      width: 100.1%;
       background-color: $ghibliBlack;
       color: white;
 
@@ -63,42 +69,130 @@ $ghibliBlack: #221815;
       }
     }
 
+    // .deck-box {
+    //   @include fastDisplay(space-evenly, row, wrap);
+    //   height: 500px;
+    //   width: 99%;
+
+    // .card {
+    //   @include fastDisplay(space-evenly, column, nowrap);
+    //   height: 240px;
+    //   width: 19%;
+    //   box-shadow: 5px 2px 15px 0px rgba(30, 30, 60, 0.25);
+    //   overflow: hidden;
+
+
+
+    //   .title-card {
+    //     margin: 10px;
+    //   }
+
+    //   .bigshots {
+    //     @include fastDisplay(space-evenly, row, nowrap);
+    //     width: 100%;
+    //   }
+
+    //   .directors-producers {
+    //     font-size: 8px;
+    //     font-style: italic;
+    //   }
+
+    //   .card:hover .card-description {
+    //     opacity: 1;
+    //     visibility: visible;
+    //   }
+
+    //   .card-description {
+    //     font-size: 10px;
+    //     visibility: hidden;
+    //     opacity: 1;
+    //   }
+
+
+    //   img {
+    //     height: 500px;
+    //     width: 350px;
+    //     border-radius: 6px;
+    //     margin: 20px
+    //   }
+    // }
+    // }
+
     .deck-box {
-      @include fastDisplay(space-evenly, row, wrap);
-      height: 500px;
-      width: 99%;
-
-      .card {
-        @include fastDisplay(space-evenly, column, nowrap);
-        height: 300px;
-        width: 18%;
-
-        .title-card {
-          margin-top: -16px;
-        }
-
-        .bigshots {
-          @include fastDisplay(space-evenly, row, nowrap);
-          width: 100%;
-          margin-bottom: -16px;
-        }
-
-        .directors-producers {
-          font-size: 8px;
-          font-style: italic;
-        }
-
-        .card-description {
-          margin-top: -20px;
-          font-size: 12px;
-        }
-
-
-        img {
-          width: 100%;
-          border-radius: 6px;
-        }
-      }
+      display: flex;
+      @include fastDisplay(center, row, wrap);
     }
+
+    .card {
+      border-radius: 8px;
+      height: 300px;
+      margin: 50px auto;
+      width: 31%;
+      box-shadow: 5px 5px 20px black;
+      overflow: hidden;
+    }
+
+    img {
+      height: 300px;
+      width: 100%;
+      transition: .5s;
+    }
+
+    .title-card {
+      margin: 8px 8px 0px;
+    }
+
+    p {
+      margin-top: -80px;
+    }
+
+    article {
+      margin: 8px;
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    .intro {
+      height: 70px;
+      width: 30.7vw;
+      padding: 6px;
+      position: absolute;
+      background: rgb(27, 27, 27, .5);
+      color: white;
+      margin-top: -74px;
+      border-radius: 8px;
+      transition: .5s;
+    }
+
+    .card-description {
+      font-size: 9px;
+    }
+
+    .card:hover {
+      cursor: pointer;
+    }
+
+    .card:hover .intro {
+      height: 280px;
+      margin-top: -284px;
+      background: $ghibliBlack;
+      opacity: 0.8;
+    }
+
+    .card:hover article {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .card:hover img {
+      transform: scale(1.1) rotate(-2deg);
+    }
+
+    .directors-producers {
+      font-size: 8px;
+      font-style: italic;
+    }
+
   }
+
 }
