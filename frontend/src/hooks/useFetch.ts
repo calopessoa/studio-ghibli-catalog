@@ -1,8 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Movies } from "../interfaces/MoviesOnProdEntities";
-// import * as dotenv from "dotenv";
-// dotenv.config();
 
 export const useFetch = (path: string) => {
   const [films, setFilms] = useState<Movies[]>([]);
