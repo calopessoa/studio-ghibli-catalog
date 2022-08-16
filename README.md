@@ -99,9 +99,7 @@ npm run dev
 :::info
 
 It's possible to run tests, still in the backend folder, run:
-```bash
-npm test
-```
+"npm test"
 
 :::
 
