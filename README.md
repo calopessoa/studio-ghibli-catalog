@@ -111,7 +111,7 @@ It's possible to run tests, still in the backend folder, run:
 npm test
 ```
 
-Then, you are ready to launch the frontend:
+Then, you are **READY TO LAUNCH**:
 
 ```bash
 https://studio-ghibli-catalog-eight.vercel.app/
