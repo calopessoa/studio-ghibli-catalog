@@ -73,7 +73,7 @@ Studio Ghibli Catalog is a project that shows the current Studio's productions, 
 
 ### Lessons learned
 
-In this project I could improve my knowledge in both front-end and back-end, by:
+- In this project I could improve my knowledge in both front-end and back-end, by:
 
 - Using and learning about new libraries and frameworks and its applicabilities, namely Prisma and Docusaurus.
 - Creating a fake database to make end to end tests.
@@ -95,6 +95,12 @@ cd studio-ghibli-catalog
 cd backend
 ```
 
+Install dependencies
+
+```bash
+npm install
+```
+
 ```bash
 npm run dev
 ```
@@ -102,7 +108,7 @@ npm run dev
 It's possible to run tests, still in the backend folder, run:
 
 ```bash
-"npm test"
+npm test
 ```
 
 Then, you are ready to launch the frontend:
