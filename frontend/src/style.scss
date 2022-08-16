@@ -21,9 +21,9 @@ $ghibliBlack: #221815;
 }
 
 .main-container {
-  @include fastDisplay(space-evenly, column, nowrap);
+  @include fastDisplay(none, column, nowrap);
   min-height: 150vh;
-  width: 98.1vw;
+  width: 99vw;
 
 
   header {
@@ -77,8 +77,8 @@ $ghibliBlack: #221815;
     .card {
       border-radius: 8px;
       height: 300px;
-      margin: 50px auto;
-      width: 31%;
+      margin: 50px 10px;
+      width: 30.85vw;
       box-shadow: 5px 5px 20px black;
       overflow: hidden;
     }
@@ -105,7 +105,7 @@ $ghibliBlack: #221815;
 
     .intro {
       height: 70px;
-      width: 30.7vw;
+      width: 30.85vw;
       padding: 6px;
       position: absolute;
       background: rgb(27, 27, 27, .5);
