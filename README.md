@@ -1,5 +1,8 @@
-# studio-ghibli-catalog
-A fullstack catalog for Studio Ghibli's productions. Get to know more about your favorite film animation!
+# Studio-Ghibli-Catalog
+A fullstack catalog for Studio Ghibli's productions. Get to know more about your favorite animation film!
+
+Please proceed to the Documentation for a guide about using the API
+https://documentation-studio-ghibli-catalog.vercel.app/
 
 ## Table of contents
 
@@ -28,7 +31,12 @@ Studio Ghibli Catalog is a project that shows the current Studio's productions, 
 
 ## Images
 
-placeholder for future images
+<div align="center">
+  <img width="460px" height="383px" src="./frontend/src/assets/bannerToReadMe.png" />
+  <img width="460px" height="383px" src="./frontend/src/assets/cardToReadMe.png" />
+  <img width="580px" height="383px" src="./frontend/src/assets/demo.gif" />
+</div>
+
 
 ## The development process
 
@@ -46,17 +54,18 @@ placeholder for future images
 #### Back-end
 
 - TypeScript
+- Postgres
 - Node.js
 - Express.js
+- Prisma
 - cors
 - express-async-errors
 - Jest
-- Prisma
-- MySQL
 
 #### Deployment
 
-- Firebase hosting
+- Front-end: Vercel
+- Back-end (only database): Supabase 
 
 #### Documentation
 
@@ -64,14 +73,52 @@ placeholder for future images
 
 ### Lessons learned
 
-In this project I could improve my knowledge in both front-end and back-end, by:
+- In this project I could improve my knowledge in both front-end and back-end, by:
 
 - Using and learning about new libraries and frameworks and its applicabilities, namely Prisma and Docusaurus.
 - Creating a fake database to make end to end tests.
 - Fetching the backend using axios actions.
 
-(MORE TO COME)
-USAGE
+## Usage
 
+```bash
+git clone 'git@github.com:calopessoa/studio-ghibli-catalog.git'
+```
+
+```bash
+cd studio-ghibli-catalog
+```
+
+- You'll have access to the backend and frontend folders, in order to build up the API, run:
+
+```bash
+cd backend
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+```bash
+npm run dev
+```
+
+It's possible to run tests, still in the backend folder, run:
+
+```bash
+npm test
+```
+
+Then, you are ready to launch the frontend:
+
+```bash
+https://studio-ghibli-catalog-eight.vercel.app/
+```
+
+## Author
+
+- LinkedIn - [Carlos Augusto Lopes de Oliveira](https://www.linkedin.com/in/carlos-augusto-lopes-de-oliveira-2602458b/)
 
 
