@@ -18,21 +18,21 @@ export const AnimationsCatalog = () => {
           className="bt-pagination"
           onClick={() => renderByPage('first')}
         >
-          page 1
+          Page 1
         </button>
 
         <button
           className="bt-pagination"
           onClick={() => renderByPage('second')}
         >
-          page 2
+          Page 2
         </button>
 
         <button
           className="bt-pagination"
           onClick={() => renderByPage('third')}
         >
-          page 3
+          Page 3
         </button>
 
         <button
@@ -40,7 +40,7 @@ export const AnimationsCatalog = () => {
           className="bt-pagination"
           onClick={() => renderByPage('')}
         >
-          show all
+          Show All
         </button>
       </nav>
 
