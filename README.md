@@ -96,12 +96,11 @@ cd backend
 npm run dev
 ```
 
-:::info
-
 It's possible to run tests, still in the backend folder, run:
-"npm test"
 
-:::
+```bash
+"npm test"
+```
 
 Then, you are ready to launch the frontend:
 
