@@ -69,55 +69,6 @@ $ghibliBlack: #221815;
       }
     }
 
-    // .deck-box {
-    //   @include fastDisplay(space-evenly, row, wrap);
-    //   height: 500px;
-    //   width: 99%;
-
-    // .card {
-    //   @include fastDisplay(space-evenly, column, nowrap);
-    //   height: 240px;
-    //   width: 19%;
-    //   box-shadow: 5px 2px 15px 0px rgba(30, 30, 60, 0.25);
-    //   overflow: hidden;
-
-
-
-    //   .title-card {
-    //     margin: 10px;
-    //   }
-
-    //   .bigshots {
-    //     @include fastDisplay(space-evenly, row, nowrap);
-    //     width: 100%;
-    //   }
-
-    //   .directors-producers {
-    //     font-size: 8px;
-    //     font-style: italic;
-    //   }
-
-    //   .card:hover .card-description {
-    //     opacity: 1;
-    //     visibility: visible;
-    //   }
-
-    //   .card-description {
-    //     font-size: 10px;
-    //     visibility: hidden;
-    //     opacity: 1;
-    //   }
-
-
-    //   img {
-    //     height: 500px;
-    //     width: 350px;
-    //     border-radius: 6px;
-    //     margin: 20px
-    //   }
-    // }
-    // }
-
     .deck-box {
       display: flex;
       @include fastDisplay(center, row, wrap);
