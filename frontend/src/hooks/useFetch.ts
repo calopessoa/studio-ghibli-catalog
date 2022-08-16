@@ -4,7 +4,7 @@ import { Movies } from "../interfaces/MoviesOnProdEntities";
 
 export const useFetch = (path: string) => {
   const [films, setFilms] = useState<Movies[]>([]);
-  const url = `http://localhost:3000/${path}`;
+  const url = `http://localhost:3001/${path}`;
 
   useEffect(() => {
     const getAll = () => {
