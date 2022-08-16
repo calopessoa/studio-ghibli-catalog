@@ -6,7 +6,7 @@ generator client {
 }
 
 datasource db {
-  provider = "mysql"
+  provider = "postgres"
   url      = env("DATABASE_URL")
 }
 
@@ -14,7 +14,7 @@ model Movie {
   id                String              @id
   title             String              @db.VarChar(255)
   banner            String
-  description       String              @db.LongText
+  description       String              @db.Text
   director          Director            @relation(fields: [directorId], references: [id])
   directorId        String
   MoviesOnProducers MoviesOnProducers[]
