@@ -1,6 +1,9 @@
 # Studio-Ghibli-Catalog
 A fullstack catalog for Studio Ghibli's productions. Get to know more about your favorite animation film!
 
+Please proceed to the Documentation for a guide about using the API
+https://documentation-studio-ghibli-catalog.vercel.app/
+
 ## Table of contents
 
 - [General view](#general-view)
