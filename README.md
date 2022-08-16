@@ -1,5 +1,5 @@
-# studio-ghibli-catalog
-A fullstack catalog for Studio Ghibli's productions. Get to know more about your favorite film animation!
+# Studio-Ghibli-Catalog
+A fullstack catalog for Studio Ghibli's productions. Get to know more about your favorite animation film!
 
 ## Table of contents
 
@@ -28,7 +28,12 @@ Studio Ghibli Catalog is a project that shows the current Studio's productions, 
 
 ## Images
 
-placeholder for future images
+<div align="center">
+  <img width="200px" height="432px" src="./frontend/src/assets/bannerToReadMe.png" />
+  <img width="200px" height="432px" src="./frontend/src/assets/cardToReadMe.png" />
+  <img width="200px" height="432px" src="./frontend/src/assets/demo.gif" />
+</div>
+
 
 ## The development process
 
@@ -46,17 +51,18 @@ placeholder for future images
 #### Back-end
 
 - TypeScript
+- Postgres
 - Node.js
 - Express.js
+- Prisma
 - cors
 - express-async-errors
 - Jest
-- Prisma
-- MySQL
 
 #### Deployment
 
-- Firebase hosting
+- Front-end: Vercel
+- Back-end (only database): Supabase 
 
 #### Documentation
 
@@ -70,8 +76,43 @@ In this project I could improve my knowledge in both front-end and back-end, by:
 - Creating a fake database to make end to end tests.
 - Fetching the backend using axios actions.
 
-(MORE TO COME)
-USAGE
+## Usage
 
+```bash
+git clone 'git@github.com:calopessoa/studio-ghibli-catalog.git'
+```
+
+```bash
+cd studio-ghibli-catalog
+```
+
+- You'll have access to the backend and frontend folders, in order to build up the API, run:
+
+```bash
+cd backend
+```
+
+```bash
+npm run dev
+```
+
+:::info
+
+It's possible to run tests, still in the backend folder, run:
+```bash
+npm test
+```
+
+:::
+
+Then, you are ready to launch the frontend:
+
+```bash
+https://studio-ghibli-catalog-eight.vercel.app/
+```
+
+## Author
+
+- LinkedIn - [Carlos Augusto Lopes de Oliveira](https://www.linkedin.com/in/carlos-augusto-lopes-de-oliveira-2602458b/)
 
 
