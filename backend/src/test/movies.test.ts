@@ -34,6 +34,10 @@ describe("test for pagination route", () => {
     expect(response.body.length).toBe(10);
     expect(response.status).toBe(200);
   });
+  it("didn't bring the exact amount of movies of second page", async () => {
+    const response = await request(app).get("/movies/second");
+    expect(response.body.length).toBe(10);
+  });
   it("didn't bring the exact amount of movies", async () => {
     const response = await request(app).get("/movies/third");
     expect(response.body.length).not.toBe(10);
