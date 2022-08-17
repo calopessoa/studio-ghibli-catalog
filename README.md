@@ -32,8 +32,8 @@ Studio Ghibli Catalog is a project that shows the current Studio's productions, 
 ## Images
 
 <div align="center">
-  <img width="460px" height="383px" src="./frontend/src/assets/bannerToReadMe.png" />
-  <img width="460px" height="383px" src="./frontend/src/assets/cardToReadMe.png" />
+  <img width="580px" height="383px" src="./frontend/src/assets/bannerToReadMe.png" />
+  <img width="580px" height="383px" src="./frontend/src/assets/cardToReadMe.png" />
   <img width="580px" height="383px" src="./frontend/src/assets/demo.gif" />
 </div>
 
